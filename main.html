@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,21 +6,22 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+
 	<p id="counter">0</p>
 	<button id="incrementBtn">Increment</button>
-    <script type="text/javascript" src="./script.js">
+
+	<script>
 		let count = 0;
+
 		const counter = document.getElementById("counter");
-		const incrementNo = document.getElementById("incrementBtn");
+		const incrementBtn = document.getElementById("incrementBtn");
 
-		incrementNo.addEventListener("click" ,function(){
-			alert(count);
-
-			count++;
-			counter.innerText = count;
+		incrementBtn.addEventListener("click", function () {
+			alert(count);   // show old value
+			count++;        // increment
+			counter.innerText = count; // update UI
 		});
-</script>
+	</script>
 
 </body>
 
