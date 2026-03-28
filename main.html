@@ -8,14 +8,19 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<p id="count">0</p>
-	<button onclick="incrementNo()">Increment</button>
+	<p id="counter">0</p>
+	<button id="incrementBtn">Increment</button>
     <script type="text/javascript" src="./script.js">
 		let count = 0;
-		function incrementNo(){
+		const counter = document.getElementById("counter");
+		const incrementNo = document.getElementById("incrementNo");
+
+		incrementBtn.addEventListener("click" ,function(){
+			alert(count);
+
 			count++;
-			document.getElementById("count").innerText = count;
-		}
+			counter.innerText(count);
+		});
 </script>
 
 </body>
